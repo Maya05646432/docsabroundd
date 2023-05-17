@@ -11,7 +11,7 @@ $mail->setLanguage('ru', 'files/phpmailer/language/');
 $mail->IsHTML(true);
 $mail->Host = 'smtp.mail.ru';
 $mail->Username = 'docs.abround@mail.ru';
-$mail->Password = 'SidarovichToma0520';
+$mail->Password = 'Ya0tS0a8YFQMCGayftWP';
 $mail->SMTPSecure = 'ssl';
 $mail->SMTPAuth = true;
 $mail->Port = 465;
