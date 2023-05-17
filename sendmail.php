@@ -9,8 +9,13 @@ $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
 $mail->setLanguage('ru', 'files/phpmailer/language/');
 $mail->IsHTML(true);
-
-$mail->setFrom('duendei@mail.ru');
+$mail->Host = 'smtp.mail.ru';
+$mail->Username = 'docs.abround@mail.ru';
+$mail->Password = 'SidarovichToma0520';
+$mail->SMTPSecure = 'ssl';
+$mail->SMTPAuth = true;
+$mail->Port = 465;
+$mail->setFrom('docs.abround@mail.ru');
 $mail->addAddress('wsxd.ts@mail.ru');
 $mail->Subject = 'Разработка сайта';
 
