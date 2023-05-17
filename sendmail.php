@@ -30,7 +30,7 @@ if((mb_strlen($_POST['name']) > 25) or (mb_strlen($_POST['email']) > 50) or (mb_
     echo "Ошибка";
  } 
 
-if (!$email->send()) {
+if (!$mail->send()) {
     $message = 'Ошибка';
 }else {
     $message = 'Данные отправлены!';
